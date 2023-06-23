@@ -1,0 +1,81 @@
+/*@!Encoding:1250*/
+includes
+ { 
+ }
+variables
+ {
+  byte i;
+  byte type_attack=3;
+  message CAN.* m_attack;
+  timer t_DoS,t_attack,t1,t2;
+  double delay_5=5000;
+  double delay_10=0;
+  double delay_20=0;
+  double delay_40=0;
+  double delay_100=0;
+  double initial_delay_Dos=1000000;
+  int epsilon;
+  enum type_attack_enum
+  { 
+  replay = 0,
+  modification = 1,
+  DoS = 2
+  };
+ }
+on timer t_DoS
+ {
+    output(m_attack);
+    setTimer(t_DoS,0,100*1000);
+ }
+on timer t_attack
+ {
+    m_attack.ESI=1;
+    output(m_attack);
+ }
+on timer t1
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t2
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on sysvar_change General_Injection::Start_Attack
+{
+  type_attack=sysGetVariableInt(sysvar::General_Injection::Select_Attack);
+}
+on message CAN1.*
+{
+  if(this.ESI==1)
+  {
+    writeToLogEx("intrusion");
+  }
+  else
+  {
+    epsilon=random(100);
+    if(epsilon<100)
+    {
+      if(this.id == 353)
+		{
+			m_attack.id=this.id;
+			m_attack.dir=tx;
+			m_attack.dlc=this.dlc;
+			for(i=0;i<=7;i++)
+			  m_attack.byte(i)=random(255);
+					
+			if(isTimerActive(t1)==0)
+			{
+				delay_10=random(10000);
+				setTimer(t1,0,delay_10*1000);
+			}
+			else if(isTimerActive(t2)==0)
+			{
+				delay_10=random(10000);
+				setTimer(t2,0,delay_10*1000);
+			}
+		}
+    }
+  }
+}
