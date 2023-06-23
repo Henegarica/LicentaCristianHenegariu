@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateFilesFullTrace", "GenerateFilesFullTrace\GenerateFilesFullTrace.csproj", "{59FDA526-8927-447B-823B-6D816238EFBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59FDA526-8927-447B-823B-6D816238EFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FDA526-8927-447B-823B-6D816238EFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FDA526-8927-447B-823B-6D816238EFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FDA526-8927-447B-823B-6D816238EFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5012CBD4-2292-4C24-862A-6B76E5B5205A}
+	EndGlobalSection
+EndGlobal

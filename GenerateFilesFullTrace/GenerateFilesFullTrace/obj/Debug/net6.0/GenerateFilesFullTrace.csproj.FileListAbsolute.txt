@@ -1,0 +1,15 @@
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\bin\Debug\net6.0\GenerateFilesFullTrace.exe
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\bin\Debug\net6.0\GenerateFilesFullTrace.deps.json
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\bin\Debug\net6.0\GenerateFilesFullTrace.runtimeconfig.json
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\bin\Debug\net6.0\GenerateFilesFullTrace.dll
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\bin\Debug\net6.0\GenerateFilesFullTrace.pdb
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.csproj.AssemblyReference.cache
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.AssemblyInfoInputs.cache
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.AssemblyInfo.cs
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.csproj.CoreCompileInputs.cache
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.dll
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\refint\GenerateFilesFullTrace.dll
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.pdb
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\GenerateFilesFullTrace.genruntimeconfig.cache
+C:\Users\heneg\source\repos\GenerateFilesFullTrace\GenerateFilesFullTrace\obj\Debug\net6.0\ref\GenerateFilesFullTrace.dll
