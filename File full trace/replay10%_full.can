@@ -1,0 +1,359 @@
+/*@!Encoding:1250*/
+includes
+ { 
+ }
+variables
+ {
+  byte i;
+  byte type_attack=3;
+  message CAN.* m_attack;
+  timer t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16,t17,t18,t19,t20,t21,t22,t23,t24;
+  double delay_5=5000;
+  double delay_10=0;
+  double delay_20=0;
+  double delay_40=0;
+  double delay_100=0;
+  double initial_delay_Dos=1000000;
+  int epsilon;
+  enum type_attack_enum
+  { 
+  replay = 0,
+  modification = 1,
+  DoS = 2
+  };
+ }
+on timer t1
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t2
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t3
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t4
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t5
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t6
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t7
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t8
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t9
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t10
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t11
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t12
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t13
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t14
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t15
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t16
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t17
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t18
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t19
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t20
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t21
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t22
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t23
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on timer t24
+{
+  m_attack.ESI=1;
+  output(m_attack);
+}
+on sysvar_change General_Injection::Start_Attack
+{
+  type_attack=sysGetVariableInt(sysvar::General_Injection::Select_Attack);
+  /*if(type_attack == DoS)
+  {
+    m_attack.id=0;
+    m_attack.dlc=8;
+    for(i=0;i<=7;i++)
+      m_attack.byte(i) = random(255);
+    setTimer(t_DoS,0,initial_delay_Dos*1000);
+  }*/
+}
+
+on message CAN1.*
+{
+	if(this.ESI==1)
+	{
+		writeToLogEx("intrusion");
+	}
+	else
+	{
+		epsilon=random(100);
+		if(epsilon<10)
+		{
+		if(this.id == 421)
+      {
+            if(isTimerActive(t1)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t1,0,delay_10*1000);
+            }
+            else if(isTimerActive(t2)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t2,0,delay_10*1000);
+            }
+      }
+      
+      if(this.id == 353)
+      {
+            if(isTimerActive(t3)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t3,0,delay_10*1000);
+            }
+            else if(isTimerActive(t4)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t4,0,delay_10*1000);
+            }
+      }
+      
+      if(this.id == 505)
+      {
+            if(isTimerActive(t5)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t5,0,delay_10*1000);
+            }
+            else if(isTimerActive(t6)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t6,0,delay_10*1000);
+            }
+      }
+      
+      if(this.id == 385)
+      {
+            if(isTimerActive(t7)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t7,0,delay_10*1000);
+            }
+            else if(isTimerActive(t8)==0)
+            {
+              delay_10=random(10000);
+              m_attack=this;
+              setTimer(t8,0,delay_10*1000);
+            }
+        }
+      if(this.id == 644)
+      {
+            if(isTimerActive(t9)==0)
+            {
+              delay_20=random(20000);
+              m_attack=this;
+              setTimer(t9,0,delay_20*1000);
+            }
+            else if(isTimerActive(t10)==0)
+            {
+              delay_20=random(20000);
+              m_attack=this;
+              setTimer(t10,0,delay_20*1000);
+            }
+      }
+      if(this.id == 645)
+      {
+            if(isTimerActive(t11)==0)
+            {
+              delay_20=random(20000);
+              m_attack=this;
+              setTimer(t11,0,delay_20*1000);
+            }
+            else if(isTimerActive(t12)==0)
+            {
+              delay_20=random(20000);
+              m_attack=this;
+              setTimer(t12,0,delay_20*1000);
+            }
+       }
+      if(this.id == 580)
+      {
+            if(isTimerActive(t13)==0)
+            {
+              delay_20=random(20000);
+              m_attack=this;
+              setTimer(t13,0,delay_20*1000);
+            }
+            else if(isTimerActive(t14)==0)
+            {
+              delay_20=random(20000);
+              m_attack=this;
+              setTimer(t14,0,delay_20*1000);
+            }
+      }
+      
+      if(this.id == 1361)
+        {
+              if(isTimerActive(t15)==0)
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t15,0,delay_100*1000);
+              }
+              else if(isTimerActive(t16))
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t16,0,delay_100*1000);
+              }
+        }
+        
+        if(this.id == 1297)
+        {
+              if(isTimerActive(t17)==0)
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t17,0,delay_100*1000);
+              }
+              else if(isTimerActive(t18))
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t18,0,delay_100*1000);
+              }
+        }
+        
+        if(this.id == 1501)
+        {
+              if(isTimerActive(t19)==0)
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t19,0,delay_100*1000);
+              }
+              else if(isTimerActive(t20))
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t20,0,delay_100*1000);
+              }
+        }
+        
+        if(this.id == 1628)
+        {
+              if(isTimerActive(t21)==0)
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t21,0,delay_100*1000);
+              }
+              else if(isTimerActive(t22))
+              {
+                delay_100=random(100000);
+                m_attack=this;
+                setTimer(t22,0,delay_100*1000);
+              }
+        }
+        
+        if(this.id == 852)
+        {
+              if(isTimerActive(t23)==0)
+              {
+                delay_40=random(40000);
+                m_attack=this;
+                setTimer(t23,0,delay_40*1000);
+              }
+              else if(isTimerActive(t24))
+              {
+                delay_40=random(40000);
+                m_attack=this;
+                setTimer(t24,0,delay_40*1000);
+              }
+        }
+      }//end epsilon
+   }//end else
+}//end on message
