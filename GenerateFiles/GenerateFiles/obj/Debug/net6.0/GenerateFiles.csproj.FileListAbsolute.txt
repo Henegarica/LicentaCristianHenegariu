@@ -1,0 +1,15 @@
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\bin\Debug\net6.0\GenerateFiles.exe
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\bin\Debug\net6.0\GenerateFiles.deps.json
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\bin\Debug\net6.0\GenerateFiles.runtimeconfig.json
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\bin\Debug\net6.0\GenerateFiles.dll
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\bin\Debug\net6.0\GenerateFiles.pdb
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.csproj.AssemblyReference.cache
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.AssemblyInfoInputs.cache
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.AssemblyInfo.cs
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.csproj.CoreCompileInputs.cache
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.dll
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\refint\GenerateFiles.dll
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.pdb
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\GenerateFiles.genruntimeconfig.cache
+C:\Users\heneg\source\repos\GenerateFiles\GenerateFiles\obj\Debug\net6.0\ref\GenerateFiles.dll
