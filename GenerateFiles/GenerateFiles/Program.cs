@@ -78,7 +78,7 @@ foreach (var line in textfromfile)
                 {
                     secondValue = Double.Parse(splitString[1]) - value;
                 }
-                finalLine = secondValue + "," + splitString[4] + ",";
+                finalLine = secondValue + "," + Convert.ToInt32(splitString[4], 16) + ",";
                 firstValue = Double.Parse(splitString[1]);
                 value = firstValue;
             }
